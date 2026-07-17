@@ -48,6 +48,18 @@ async function cargarVista(vista) {
 
         }
 
+        if (vista === "editar-personaje") {
+
+            await cargarTablaEditar();
+
+        }
+
+        if (vista === "formulario-editar-personaje") {
+
+            await inicializarFormularioEditar();
+
+        }
+
     }
 
     catch (error) {

@@ -1,0 +1,134 @@
+<section class="agregarPersonaje">
+
+    <section class="heroPersonajes">
+
+        <img
+            src="img/heroBanner1.png"
+            alt="Editar personaje"
+        >
+
+    </section>
+
+    <div class="lineaSeparadora"></div>
+
+    <section class="contenedorFormulario">
+
+        <h2>
+
+            EDITAR PERSONAJE
+
+        </h2>
+
+        <form id="formEditarPersonaje">
+
+            <div class="grupoFormulario">
+
+                <label>
+
+                    Nombre
+
+                </label>
+
+                <input
+                    type="text"
+                    id="nombre"
+                    required
+                >
+
+            </div>
+
+            <div class="grupoFormulario">
+
+                <label>
+
+                    Sub-Colección
+
+                </label>
+
+                <select
+                    id="sub_coleccion_id"
+                    required
+                >
+
+                    <option value="1">Pinky Pow 2006</option>
+                    <option value="2">Peores Que Nunca</option>
+                    <option value="3">Rebeldes Con Causa</option>
+                    <option value="5">Pinky Pow 2020</option>
+                    <option value="6">Sub-colección Baby</option>
+                    <option value="7">Sub-colección X</option>
+
+                </select>
+
+            </div>
+
+            <div class="grupoFormulario">
+
+                <label>
+
+                    Tipo de Llavero
+
+                </label>
+
+                <select
+                    id="tipo_llavero_id"
+                    required
+                >
+
+                    <option value="1">Llavero 3D</option>
+                    <option value="2">Colgante 3D</option>
+                    <option value="3">Colgante Plano</option>
+                    <option value="4">Fluffy Colgante</option>
+
+                </select>
+
+            </div>
+
+            <div class="grupoFormulario">
+
+                <label>
+
+                    Imagen del personaje
+
+                </label>
+
+                <input
+                    type="file"
+                    id="img_personaje"
+                    accept="image/*"
+                >
+
+            </div>
+
+            <div class="grupoFormulario">
+
+                <label>
+
+                    Vista previa
+
+                </label>
+
+                <img
+                    id="previewImagen"
+                    class="previewImagen"
+                >
+
+            </div>
+
+            <div class="botonesFormulario">
+
+                <button
+                    type="submit"
+                    class="btnGuardar"
+                >
+
+                    GUARDAR CAMBIOS
+
+                </button>
+
+            </div>
+
+        </form>
+
+    </section>
+
+</section>

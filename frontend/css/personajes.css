@@ -1,13 +1,8 @@
 .personajes{
-
     width:100%;
-
     display:flex;
-
     flex-direction:column;
-
     gap:22px;
-
 }
 
 /* ========================= */
@@ -15,22 +10,16 @@
 /* ========================= */
 
 .heroPersonajes{
-
     width:100%;
-
     border-radius:10px;
-
     overflow:hidden;
-
 }
 
 .heroPersonajes img{
-
     width:100%;
-
     display:block;
-
 }
+
 
 /* ========================= */
 /* Barra filtros */
@@ -109,45 +98,28 @@
 /* ========================= */
 
 .barraBusqueda select{
-
     width:180px;
-
     height:50px;
-
     border:2px solid #575757;
-
     border-radius:8px;
-
     background:#111;
-
     color:#fff;
-
     font-size:15px;
-
     font-weight:bold;
-
     padding:0 15px;
-
     cursor:pointer;
-
     transition:.25s;
-
     flex-shrink:0;
 
 }
 
 .barraBusqueda select:hover{
-
     border-color:#ac0a0a;
-
 }
 
 .barraBusqueda select:focus{
-
     border-color:#ac0a0a;
-
     outline:none;
-
 }
 
 /* ========================= */
@@ -155,13 +127,9 @@
 /* ========================= */
 
 .btnBuscarFiltros{
-
     width:170px;
-
     height:50px;
-
     border:none;
-
     border-radius:10px;
 
     background:linear-gradient(
@@ -172,52 +140,35 @@
     );
 
     color:#ffffff;
-
     font-size:15px;
-
     font-weight:700;
-
     letter-spacing:1px;
-
     text-transform:uppercase;
-
     cursor:pointer;
-
     flex-shrink:0;
-
     transition:
         transform .2s ease,
         box-shadow .25s ease,
         filter .25s ease;
-
 }
 
 .btnBuscarFiltros:hover{
 
     transform:translateY(-2px);
-
     filter:brightness(1.08);
-
     box-shadow:
         0 0 14px rgba(176,0,0,.45),
         0 6px 18px rgba(0,0,0,.35);
-
 }
 
 .btnBuscarFiltros:active{
-
     transform:translateY(1px);
-
     box-shadow:none;
-
 }
 
 .btnBuscarFiltros:focus{
-
     outline:none;
-
     box-shadow:0 0 0 3px rgba(176,0,0,.25);
-
 }
 
 /* ========================= */

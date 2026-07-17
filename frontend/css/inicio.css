@@ -1,52 +1,131 @@
-.hero{
-
-    height:220px;
-
-    background:#d74a4a;
-
-    border-radius:12px;
+.inicioWiki{
 
     display:flex;
-    justify-content:center;
-    align-items:center;
 
-    font-size:35px;
-    font-weight:bold;
+    flex-direction:column;
+
+    gap:28px;
 
 }
 
-.busqueda{
+.heroInicio{
 
-    height:80px;
+    text-align:center;
 
-    background:#d6b03d;
+    padding:40px;
 
-    border-radius:12px;
+    background:#111;
 
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    border:1px solid #3a3a3a;
 
-    font-size:28px;
-    font-weight:bold;
+    border-radius:10px;
 
 }
 
-.contenido{
+.heroInicio img{
 
-    flex:1;
+    width:320px;
 
-    min-height:500px;
+    margin-bottom:20px;
 
-    background:#6d3fc7;
+}
 
-    border-radius:12px;
+.heroInicio h1{
+
+    color:#ffffff;
+
+    font-size:42px;
+
+    margin-bottom:15px;
+
+}
+
+.heroInicio p{
+
+    max-width:850px;
+
+    margin:auto;
+
+    color:#d0d0d0;
+
+    line-height:1.8;
+
+}
+
+.gridInicio{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:22px;
+
+}
+
+.wikiCard{
+
+    background:#101010;
+
+    border:1px solid #444;
+
+    border-radius:8px;
+
+    padding:25px;
+
+}
+
+.wikiCard h2{
+
+    color:#ac0a0a;
+
+    margin-bottom:18px;
+
+}
+
+.wikiCard p{
+
+    color:#e5e5e5;
+
+    line-height:1.8;
+
+    text-align:justify;
+
+}
+
+.wikiCard ul{
+
+    color:white;
+
+    padding-left:22px;
+
+    line-height:2;
+
+}
+
+.wikiCard.imagen{
 
     display:flex;
+
     justify-content:center;
+
     align-items:center;
 
-    font-size:35px;
-    font-weight:bold;
+}
+
+.wikiCard.imagen img{
+
+    width:100%;
+
+    max-width:520px;
+
+}
+
+@media(max-width:900px){
+
+    .gridInicio{
+
+        grid-template-columns:1fr;
+
+    }
 
 }

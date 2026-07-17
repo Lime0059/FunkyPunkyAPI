@@ -1,0 +1,290 @@
+.personajes{
+
+    width:100%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:22px;
+
+}
+
+/* ========================= */
+/* Hero */
+/* ========================= */
+
+.heroPersonajes{
+
+    width:100%;
+
+    border-radius:10px;
+
+    overflow:hidden;
+
+}
+
+.heroPersonajes img{
+
+    width:100%;
+
+    display:block;
+
+}
+
+/* ========================= */
+/* Barra filtros */
+/* ========================= */
+
+.barraBusqueda{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+    width:100%;
+
+    flex-wrap:wrap;
+
+}
+
+.busqueda{
+
+    flex:1;
+
+    min-width:320px;
+
+    height:50px;
+
+    background:#ffffff;
+
+    border-radius:8px;
+
+    display:flex;
+
+    align-items:center;
+
+    padding:0 18px;
+
+    transition:.25s;
+
+}
+
+.busqueda:focus-within{
+
+    box-shadow:0 0 0 2px #ac0a0a;
+
+}
+
+.busqueda img{
+
+    width:22px;
+
+    margin-right:14px;
+
+    opacity:.7;
+
+}
+
+.busqueda input{
+
+    width:100%;
+
+    border:none;
+
+    outline:none;
+
+    background:transparent;
+
+    font-size:16px;
+
+    color:#222;
+
+}
+
+/* ========================= */
+/* Selects */
+/* ========================= */
+
+.barraBusqueda select{
+
+    width:180px;
+
+    height:50px;
+
+    border:2px solid #575757;
+
+    border-radius:8px;
+
+    background:#111;
+
+    color:#fff;
+
+    font-size:15px;
+
+    font-weight:bold;
+
+    padding:0 15px;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+    flex-shrink:0;
+
+}
+
+.barraBusqueda select:hover{
+
+    border-color:#ac0a0a;
+
+}
+
+.barraBusqueda select:focus{
+
+    border-color:#ac0a0a;
+
+    outline:none;
+
+}
+
+/* ========================= */
+/* Botón Buscar */
+/* ========================= */
+
+.btnBuscarFiltros{
+
+    width:170px;
+
+    height:50px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:linear-gradient(
+        180deg,
+        #b00000 0%,
+        #8f0000 55%,
+        #6d0000 100%
+    );
+
+    color:#ffffff;
+
+    font-size:15px;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+    text-transform:uppercase;
+
+    cursor:pointer;
+
+    flex-shrink:0;
+
+    transition:
+        transform .2s ease,
+        box-shadow .25s ease,
+        filter .25s ease;
+
+}
+
+.btnBuscarFiltros:hover{
+
+    transform:translateY(-2px);
+
+    filter:brightness(1.08);
+
+    box-shadow:
+        0 0 14px rgba(176,0,0,.45),
+        0 6px 18px rgba(0,0,0,.35);
+
+}
+
+.btnBuscarFiltros:active{
+
+    transform:translateY(1px);
+
+    box-shadow:none;
+
+}
+
+.btnBuscarFiltros:focus{
+
+    outline:none;
+
+    box-shadow:0 0 0 3px rgba(176,0,0,.25);
+
+}
+
+/* ========================= */
+/* Separador */
+/* ========================= */
+
+.lineaSeparadora{
+
+    width:100%;
+
+    height:2px;
+
+    background:#ac0a0a;
+
+}
+
+/* ========================= */
+/* Contenedor tarjetas */
+/* ========================= */
+
+#contenedorPersonajes{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fill,240px);
+
+    justify-content:center;
+
+    gap:24px;
+
+}
+
+/* ========================= */
+/* Responsive */
+/* ========================= */
+
+@media(max-width:1100px){
+
+    .barraBusqueda{
+
+        flex-wrap:wrap;
+
+    }
+
+    .busqueda{
+
+        flex-basis:100%;
+
+    }
+
+}
+
+@media(max-width:700px){
+
+    .barraBusqueda{
+
+        flex-direction:column;
+
+        align-items:stretch;
+
+    }
+
+    .barraBusqueda select,
+    .btnBuscarFiltros{
+
+        width:100%;
+
+    }
+
+}

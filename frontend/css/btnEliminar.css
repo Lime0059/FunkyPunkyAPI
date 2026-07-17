@@ -1,0 +1,36 @@
+.btnEliminar{
+
+    position:absolute;
+
+    right:9%;
+
+    bottom:8%;
+
+    width:100px;
+
+    height:31px;
+
+    border:none;
+
+    background-image:url("../img/botones/btn_eliminar.png");
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+    background-position:center;
+
+    background-color:transparent;
+
+    cursor:pointer;
+
+    z-index:50;
+
+    padding:0;
+
+    transition:.2s;
+
+}
+
+.btnEliminar:hover{
+
+    background-image:url("../img/botones/btn_eliminar2.png");
+
+}

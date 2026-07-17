@@ -1,0 +1,31 @@
+.admin{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:14px;
+
+}
+
+.admin h1{
+
+    margin-top:20px;
+
+    margin-bottom:8px;
+
+    font-size:26px;
+
+}
+
+.admin h1:first-child{
+
+    margin-top:0;
+
+}
+
+.menu-admin{
+
+    margin-left:18px;
+
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Iniciar Sesión | Funki Punky</title>
+
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/login.css">
+
+</head>
+
+<body>
+
+    <section class="login">
+
+        <div class="login-logo">
+
+            <img
+                src="../img/Bienvenida.png"
+                alt="Funki Punky"
+            >
+
+        </div>
+
+        <form id="formLogin">
+
+            <label for="correo">
+
+                Correo electrónico
+
+            </label>
+
+            <input
+                type="email"
+                id="correo"
+                placeholder="Correo"
+                required
+            >
+
+            <label for="password">
+
+                Contraseña
+
+            </label>
+
+            <div class="password">
+
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Contraseña"
+                    required
+                >
+
+                <button
+                    type="button"
+                    id="btnMostrarPassword"
+                    aria-label="Mostrar contraseña"
+                >
+
+                    <img
+                        id="iconoPassword"
+                        src="../img/icons/show.png"
+                        alt="Mostrar contraseña"
+                    >
+
+                </button>
+
+            </div>
+
+            <button type="submit">
+
+                Iniciar Sesión
+
+            </button>
+
+        </form>
+
+        <div class="login-footer">
+
+            © 2026 Funki Punky — Todos los derechos reservados
+
+        </div>
+
+    </section>
+
+    <script src="../js/auth.js"></script>
+    <script src="../js/login.js"></script>
+
+</body>
+
+</html>

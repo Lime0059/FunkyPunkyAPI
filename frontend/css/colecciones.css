@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+@font-face{
+
+    font-family:'BadaBoom BB';
+
+    src:url('../fuentes/BADABB__.TTF') format('truetype');
+
+    font-weight:normal;
+
+    font-style:normal;
+
+}
+
+/* ========================= */
+/* CONTENEDOR GENERAL */
+/* ========================= */
+
+.colecciones{
+
+    width:100%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:25px;
+
+}
+
+/* ========================= */
+/* HERO */
+/* ========================= */
+
+.heroColecciones{
+
+    width:100%;
+
+    border-radius:12px;
+
+    overflow:hidden;
+
+}
+
+.heroColecciones img{
+
+    width:100%;
+
+    display:block;
+
+}
+
+/* ========================= */
+/* SEPARADOR */
+/* ========================= */
+
+.lineaSeparadora{
+
+    width:100%;
+
+    height:2px;
+
+    background:#ac0a0a;
+
+}
+
+/* ========================= */
+/* GRID */
+/* ========================= */
+
+#contenedorColecciones{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(300px,340px));
+
+    justify-content:center;
+
+    gap:35px;
+
+}
+
+/* ========================= */
+/* TARJETA */
+/* ========================= */
+
+.tarjetaColeccion{
+
+    position:relative;
+
+    aspect-ratio:1074 / 1175;
+
+    overflow:hidden;
+
+    border-radius:14px;
+
+    border:2px solid #3b3b3b;
+
+    background:#000;
+
+    cursor:pointer;
+
+    transition:.30s ease;
+
+}
+
+.tarjetaColeccion:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#ac0a0a;
+
+    box-shadow:
+
+        0 0 18px rgba(172,10,10,.35);
+
+}
+
+/* ========================= */
+/* IMAGEN */
+/* ========================= */
+
+.imagenColeccion{
+
+    width:100%;
+
+    height:100%;
+
+}
+
+.imagenColeccion img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    transition:.35s ease;
+
+}
+
+.tarjetaColeccion:hover img{
+
+    transform:scale(1.05);
+
+}
+
+/* ========================= */
+/* OVERLAY */
+/* ========================= */
+
+.infoColeccion{
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+        linear-gradient(
+
+            rgba(0,0,0,.20),
+
+            rgba(0,0,0,.80)
+
+        );
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:30px;
+
+    gap:10px;
+
+}
+
+/* ========================= */
+/* TEXTOS */
+/* ========================= */
+
+.tituloColeccion{
+
+    font-family:'Roboto',sans-serif;
+
+    color:#bdbdbd;
+
+    font-size:13px;
+
+    font-weight:700;
+
+    letter-spacing:5px;
+
+    text-transform:uppercase;
+
+}
+
+.infoColeccion h3{
+
+    font-family:'BadaBoom BB';
+
+    color:#ffffff;
+
+    font-size:50px;
+
+    font-weight:normal;
+
+    line-height:1.05;
+
+    text-shadow:
+
+        0 4px 10px rgba(0,0,0,.65);
+
+    transition:.25s ease;
+
+}
+
+.tarjetaColeccion:hover h3{
+
+    color:#ffe45a;
+
+}
+
+.anioColeccion{
+
+    font-family:'Roboto',sans-serif;
+
+    color:#c6bc06;
+
+    font-size:22px;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+}
+
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+
+@media(max-width:900px){
+
+    #contenedorColecciones{
+
+        grid-template-columns:repeat(auto-fit,minmax(260px,300px));
+
+    }
+
+    .infoColeccion h3{
+
+        font-size:40px;
+
+    }
+
+}
+
+@media(max-width:600px){
+
+    #contenedorColecciones{
+
+        grid-template-columns:1fr;
+
+    }
+
+}

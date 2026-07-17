@@ -1,0 +1,14 @@
+.header{
+
+    height:90px;
+
+    background:#3d6df5;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:26px;
+    font-weight:bold;
+
+}

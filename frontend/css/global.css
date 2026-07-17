@@ -1,0 +1,22 @@
+/* Reinicio de estilos */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables globales */
+
+:root {
+    --color-fondo: #121212;
+    --color-texto: #ffffff;
+}
+
+/* Estilos generales */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+}

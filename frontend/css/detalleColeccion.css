@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+@font-face{
+
+    font-family:'BadaBoom BB';
+
+    src:url('../fuentes/BADABB__.TTF') format('truetype');
+
+}
+
+.detalleColeccion{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:30px;
+
+}
+
+/* ========================= */
+/* HERO */
+/* ========================= */
+
+.heroDetalle{
+
+    height:430px;
+
+    border-radius:14px;
+
+    overflow:hidden;
+
+    background-size:cover;
+
+    background-position:center;
+
+    position:relative;
+
+}
+
+.heroOverlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+        linear-gradient(
+
+            rgba(0,0,0,.35),
+
+            rgba(0,0,0,.85)
+
+        );
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:flex-end;
+
+    padding:60px;
+
+}
+
+.subtituloColeccion{
+
+    font-family:'Roboto',sans-serif;
+
+    color:#d2d2d2;
+
+    font-size:14px;
+
+    letter-spacing:6px;
+
+    text-transform:uppercase;
+
+}
+
+#tituloColeccion{
+
+    font-family:'BadaBoom BB';
+
+    color:white;
+
+    font-size:70px;
+
+    margin:8px 0;
+
+    text-shadow:
+
+        0 0 20px rgba(0,0,0,.6);
+
+}
+
+.anioColeccion{
+
+    font-family:'Roboto';
+
+    color:#ac0a0a;
+
+    font-size:24px;
+
+    font-weight:bold;
+
+}
+
+/* ========================= */
+/* LOGO DE LA COLECCIÓN */
+/* ========================= */
+
+.logoColeccionContainer{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:5px 0;
+
+}
+
+.logoColeccion{
+
+    width:100%;
+
+    max-width:420px;
+
+    height:auto;
+
+    object-fit:contain;
+
+    filter:
+
+        drop-shadow(0 6px 12px rgba(0,0,0,.45));
+
+    transition:.30s ease;
+
+}
+
+.logoColeccion:hover{
+
+    transform:scale(1.04);
+
+}
+
+/* ========================= */
+/* CONTENIDO */
+/* ========================= */
+
+.contenidoColeccion{
+
+    display:grid;
+
+    grid-template-columns:1.1fr .9fr;
+
+    gap:35px;
+
+}
+
+.videoColeccion iframe{
+
+    width:100%;
+
+    aspect-ratio:16/9;
+
+    border:none;
+
+    border-radius:12px;
+
+}
+
+.descripcionColeccion{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+.descripcionColeccion h2{
+
+    font-family:'Roboto';
+
+    color:#ac0a0a;
+
+    font-size:30px;
+
+}
+
+.descripcionColeccion p{
+
+    color:white;
+
+    font-size:17px;
+
+    line-height:1.8;
+
+    text-align:justify;
+
+}
+
+/* ========================= */
+/* PERSONAJES */
+/* ========================= */
+
+.personajesColeccion{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:25px;
+
+}
+
+.personajesColeccion h2{
+
+    font-family:'Roboto';
+
+    color:#ac0a0a;
+
+    letter-spacing:2px;
+
+}
+
+#contenedorPersonajesColeccion{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fill,240px);
+
+    justify-content:center;
+
+    gap:24px;
+
+}
+
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+
+@media(max-width:1000px){
+
+    .contenidoColeccion{
+
+        grid-template-columns:1fr;
+
+    }
+
+    #tituloColeccion{
+
+        font-size:54px;
+
+    }
+
+    .logoColeccion{
+
+        max-width:320px;
+
+    }
+
+}

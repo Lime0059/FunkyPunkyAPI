@@ -1,0 +1,202 @@
+.sidebar{
+
+    width:280px;
+    min-width:280px;
+    height:100vh;
+
+    background:#060606;
+
+    display:flex;
+    flex-direction:column;
+
+    overflow:hidden;
+
+    transition:
+        width .30s ease,
+        min-width .30s ease,
+        border-right .30s ease;
+
+}
+
+/* ========================= */
+/* Logo */
+/* ========================= */
+
+.sidebar-logo{
+
+    height:95px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:18px 12px;
+
+}
+
+.sidebar-logo img{
+
+    width:190px;
+
+    height:auto;
+
+    object-fit:contain;
+
+}
+
+/* ========================= */
+/* Menú */
+/* ========================= */
+
+.sidebar-menu{
+
+    display:flex;
+    flex-direction:column;
+
+    gap:8px;
+
+    padding:10px 12px;
+
+}
+
+.menu-item{
+
+    height:56px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:flex-start;
+
+    gap:16px;
+
+    padding:0 18px;
+
+    border-radius:14px;
+
+    text-decoration:none;
+
+    color:#FFFFFF;
+
+    font-size:18px;
+
+    font-weight:500;
+
+    white-space:nowrap;
+
+    overflow:hidden;
+
+    transition:
+        background .20s ease,
+        transform .20s ease,
+        box-shadow .20s ease;
+
+}
+
+.menu-item span{
+
+    display:block;
+
+    line-height:1;
+
+    white-space:nowrap;
+
+}
+
+.menu-icon{
+
+    width:22px;
+
+    min-width:22px;
+
+    height:22px;
+
+    display:block;
+
+    object-fit:contain;
+
+    flex-shrink:0;
+
+}
+/* ========================= */
+/* Hover */
+/* ========================= */
+
+.menu-item:hover{
+
+    background:#181818;
+
+    transform:translateX(5px);
+
+}
+
+/* ========================= */
+/* Activo */
+/* ========================= */
+
+.menu-item.activo{
+
+    background:linear-gradient(
+        90deg,
+        #d50000 0%,
+        #990000 100%
+    );
+
+    box-shadow:
+        0 0 14px rgba(255,0,0,.22);
+
+}
+
+/* ========================= */
+/* Footer */
+/* ========================= */
+
+.sidebar-footer{
+
+    margin-top:auto;
+
+    padding:12px;
+
+    border-top:1px solid #1a1a1a;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:8px;
+
+}
+
+.sidebar-footer .menu-item{
+
+    margin:0;
+
+    color:#FFFFFF;
+
+}
+
+/* ========================= */
+/* Sidebar oculto */
+/* ========================= */
+
+body.sidebarOculto .sidebar{
+
+    width:0;
+
+    min-width:0;
+
+}
+
+body.sidebarOculto .sidebar *{
+
+    opacity:0;
+
+    pointer-events:none;
+
+}
+
+
+/* ========================= */
+/* ArregloSIdebar */
+/* ========================= */

@@ -1,0 +1,52 @@
+.hero{
+
+    height:220px;
+
+    background:#d74a4a;
+
+    border-radius:12px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:35px;
+    font-weight:bold;
+
+}
+
+.busqueda{
+
+    height:80px;
+
+    background:#d6b03d;
+
+    border-radius:12px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:28px;
+    font-weight:bold;
+
+}
+
+.contenido{
+
+    flex:1;
+
+    min-height:500px;
+
+    background:#6d3fc7;
+
+    border-radius:12px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:35px;
+    font-weight:bold;
+
+}

@@ -1,0 +1,65 @@
+.tablaPersonajes{
+
+    overflow:auto;
+
+}
+
+.tablaPersonajes table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    background:#fff;
+
+    color:#222;
+
+}
+
+.tablaPersonajes th{
+
+    background:#d6d6d6;
+
+    border:1px solid #999;
+
+    padding:12px;
+
+    text-align:left;
+
+}
+
+.tablaPersonajes td{
+
+    border:1px solid #bdbdbd;
+
+    padding:10px;
+
+}
+
+.tablaPersonajes tr:nth-child(even){
+
+    background:#f5f5f5;
+
+}
+
+.btnEditar{
+
+    padding:6px 14px;
+
+    border:none;
+
+    background:#ac0a0a;
+
+    color:white;
+
+    cursor:pointer;
+
+    border-radius:4px;
+
+}
+
+.btnEditar:hover{
+
+    background:#860808;
+
+}

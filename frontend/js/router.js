@@ -2,7 +2,7 @@ async function cargarVista(vista) {
 
     try {
 
-        const respuesta = await fetch(`views/${vista}.html`);
+        const respuesta = await fetch(`frontend/views/${vista}.html`);
 
         if (!respuesta.ok) {
 
@@ -94,7 +94,7 @@ function activarMenu() {
                 && !Auth.estaAutenticado()
             ) {
 
-                window.location.href = "views/login.html";
+                window.location.href = "frontend/views/login.html";
 
                 return;
 

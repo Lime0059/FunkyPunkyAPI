@@ -1,23 +1,38 @@
 <section class="agregar-personaje">
 
+    <h2 class="formulario__titulo">
+
+        Agregar personaje
+
+    </h2>
+
     <form id="formAgregarPersonaje">
 
-        <label>Nombre</label>
+        <label for="nombre">
+
+            Nombre
+
+        </label>
 
         <input
             type="text"
             id="nombre"
+            placeholder="Ingrese el nombre del personaje"
             required
         >
 
-        <label>Subcolección</label>
+        <label for="sub_coleccion_id">
+
+            Subcolección
+
+        </label>
 
         <select
             id="sub_coleccion_id"
             required
         >
 
-            <option value="">Seleccione...</option>
+            <option value="">Seleccione una subcolección...</option>
 
             <option value="1">Base Pinky Pow 2006</option>
             <option value="2">Base Peores Que Nunca</option>
@@ -29,23 +44,31 @@
 
         </select>
 
-        <label>Tipo de llavero</label>
+        <label for="tipo_llavero_id">
+
+            Tipo de llavero
+
+        </label>
 
         <select
             id="tipo_llavero_id"
             required
         >
 
-            <option value="">Seleccione...</option>
+            <option value="">Seleccione un tipo...</option>
 
             <option value="1">Llavero 3D</option>
             <option value="2">Colgante 3D</option>
             <option value="3">Colgante Plano</option>
-            <option value="4">Fluffy colgante</option>
+            <option value="4">Fluffy Colgante</option>
 
         </select>
 
-        <label>Imagen</label>
+        <label for="img_personaje">
+
+            Imagen del personaje
+
+        </label>
 
         <input
             type="file"

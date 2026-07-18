@@ -1,27 +1,66 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bienvenida</title>
+
     <link rel="icon" href="frontend/img/IconoWeb.png" type="image/png">
-    <link rel="stylesheet" href="frontend/css/estiloBienvenida.css">
+
+    <title>Funki Punky</title>
+
+    <link rel="stylesheet" href="frontend/css/global.css">
+    <link rel="stylesheet" href="frontend/css/layout.css">
+    <link rel="stylesheet" href="frontend/css/sidebar.css">
+    <link rel="stylesheet" href="frontend/css/header.css">
+    <link rel="stylesheet" href="frontend/css/footer.css">
+    <link rel="stylesheet" href="frontend/css/inicio.css">
+    <link rel="stylesheet" href="frontend/css/personajes.css">
+    <link rel="stylesheet" href="frontend/css/tarjeta.css">
+    <link rel="stylesheet" href="frontend/css/btnDetalle.css">
+    <link rel="stylesheet" href="frontend/css/btnEliminar.css">
+    <link rel="stylesheet" href="frontend/css/admin.css">
+    <!-- <link rel="stylesheet" href="css/agregarPersonaje.css">  -->
+    <link rel="stylesheet" href="frontend/css/detalleColeccion.css">
+    <link rel="stylesheet" href="frontend/css/colecciones.css">
+    <link rel="stylesheet" href="frontend/css/editarPersonaje.css">
+    <link rel="stylesheet" href="frontend/css/agregarPersonaje.css">
+
+
 </head>
-<body class="pantalla-bienvenida">
 
-    <main class="bienvenida">
-        <div class="bienvenida__contenedor-logo">
-            <img src="frontend/img/Bienvenida.png" alt="Logo Funki Punky" class="bienvenida__logo bienvenida__logo--normal">
-            <img src="frontend/img/Bienvenida2.png" alt="Logo Funki Punky Activo" class="bienvenida__logo bienvenida__logo--activo">
-        </div>
+<body>
 
-        <div class="bienvenida__opciones">
-            <button class="bienvenida__enlace" data-destino="frontend/index.html">Entrar</button>
-            <span class="bienvenida__separador"></span>
-            <button class="bienvenida__enlace" data-destino="frontend\views\login.html">Iniciar</button>
-        </div>
-    </main>
+    <div id="sidebar" style="position: fixed; z-index: 1000;"></div>
 
-    <script src="frontend/js/controladorbienvenida.js"></script>
+    <div class="main">
+
+        <div id="header"></div>
+
+        <main id="contenido">
+
+            <!-- Aquí se cargarán las vistas -->
+
+        </main>
+
+        <div id="footer"></div>
+
+    </div>
+
+    <script src="frontend/js/editarPersonaje.js"></script>
+    <script src="frontend/js/colecciones.js"></script>
+    <script src="frontend/js/detalleColeccion.js"></script>
+    <script src="frontend/js/agregarPersonaje.js"></script>
+    <script src="frontend/js/auth.js"></script>
+    <script src="frontend/js/header.js"></script>
+    <script src="frontend/js/sidebar.js"></script>
+    <script src="frontend/js/personajes.js"></script>
+    <script src="frontend/js/components.js"></script>
+    <script src="frontend/js/router.js"></script>
+    <script src="frontend/js/deletePersonaje.js"></script>
+    <script src="frontend/js/formEditarPersonaje.js"></script>
+
 </body>
+
 </html>

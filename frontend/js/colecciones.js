@@ -29,7 +29,7 @@ async function cargarColecciones() {
                 <div class="imagenColeccion">
 
                     <img
-                        src="data:image/png;base64,${coleccion.img_fondo_empaque}"
+                        src="data:frontend/image/png;base64,${coleccion.img_fondo_empaque}"
                         alt="${coleccion.nombre}"
                     >
 

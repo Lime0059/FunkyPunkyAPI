@@ -10,9 +10,9 @@ function inicializarSidebar() {
 
         btnLogin.style.display = "none";
 
-        btnPerfil.style.display = "flex";
+        btnPerfil.style.display = "none";
 
-        btnMiColeccion.style.display = "flex";
+        btnMiColeccion.style.display = "none";
 
         btnLogout.style.display = "flex";
 

@@ -40,7 +40,7 @@ async function cargarDetalleColeccion(){
 
         document.getElementById("logoColeccion").src =
 
-            `img/logos/${numeroLogo}FunkyLogo.png`;
+            `frontend/img/logos/${numeroLogo}FunkyLogo.png`;
 
         document.getElementById("logoColeccion").alt =
 

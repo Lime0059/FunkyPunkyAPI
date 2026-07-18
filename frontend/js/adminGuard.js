@@ -9,6 +9,6 @@ if (!Auth.estaAutenticado()) {
 
 if (!Auth.esAdministrador()) {
 
-    window.location.href = "../index.html";
+    window.location.href = "../";
 
 }

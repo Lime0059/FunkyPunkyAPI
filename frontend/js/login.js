@@ -89,7 +89,7 @@ formulario.addEventListener("submit", async (e) => {
 
         console.log("Voy al index");
 
-        window.location.href = "../index.html";
+        window.location.href = "../../";
 
     }
 

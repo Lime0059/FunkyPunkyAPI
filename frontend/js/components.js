@@ -22,11 +22,11 @@ async function cargarComponente(idContenedor, rutaArchivo) {
 
 document.addEventListener("DOMContentLoaded", async () => {
 
-    await cargarComponente("sidebar", "components/sidebar.html");
+    await cargarComponente("sidebar", "frontend/components/sidebar.html");
 
-    await cargarComponente("header", "components/header.html");
+    await cargarComponente("header", "frontend/components/header.html");
 
-    await cargarComponente("footer", "components/footer.html");
+    await cargarComponente("footer", "frontend/components/footer.html");
 
     inicializarSidebar();
     inicializarHeader();

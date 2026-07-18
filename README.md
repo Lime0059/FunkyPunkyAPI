@@ -10,3 +10,9 @@ Autores
 • Brisa Rocío Mora Rivera
 • Edgar Esteban Alba García (Repo Lime0059)
 • Karla Romero Baca
+
+
+
+¿COMO CORRO EL PROYECTO?
+Abrir una terminal y ubicarse en backend "cd backend". Despues correr el backend en el puerto con linea "npm run dev"
+EL proyecto se ejecuta en "http://localhost/FunkyPunkyAPI"

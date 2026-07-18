@@ -1,27 +1,43 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bienvenida</title>
-    <link rel="icon" href="frontend/img/IconoWeb.png" type="image/png">
-    <link rel="stylesheet" href="frontend/css/estiloBienvenida.css">
-</head>
-<body class="pantalla-bienvenida">
+<main class="bienvenida">
 
-    <main class="bienvenida">
-        <div class="bienvenida__contenedor-logo">
-            <img src="frontend/img/Bienvenida.png" alt="Logo Funki Punky" class="bienvenida__logo bienvenida__logo--normal">
-            <img src="frontend/img/Bienvenida2.png" alt="Logo Funki Punky Activo" class="bienvenida__logo bienvenida__logo--activo">
-        </div>
+    <div class="bienvenida__contenedor-logo">
 
-        <div class="bienvenida__opciones">
-            <button class="bienvenida__enlace" data-destino="frontend/index.html">Entrar</button>
-            <span class="bienvenida__separador"></span>
-            <button class="bienvenida__enlace" data-destino="frontend/views/login.html">Iniciar</button>
-        </div>
-    </main>
+        <img
+            src="frontend/img/Bienvenida.png"
+            alt="Logo Funki Punky"
+            class="bienvenida__logo bienvenida__logo--normal"
+        >
 
-    <script src="frontend/js/controladorbienvenida.js"></script>
-</body>
-</html>
+        <img
+            src="frontend/img/Bienvenida2.png"
+            alt="Logo Funki Punky Activo"
+            class="bienvenida__logo bienvenida__logo--activo"
+        >
+
+    </div>
+
+    <div class="bienvenida__opciones">
+
+        <button
+            class="bienvenida__enlace"
+            data-destino="entrar"
+        >
+
+            Entrar
+
+        </button>
+
+        <span class="bienvenida__separador"></span>
+
+        <button
+            class="bienvenida__enlace"
+            data-destino="login"
+        >
+
+            Iniciar
+
+        </button>
+
+    </div>
+
+</main>

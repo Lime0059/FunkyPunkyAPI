@@ -1,16 +1,5 @@
 <section class="agregarPersonaje">
 
-    <section class="heroPersonajes">
-
-        <img
-            src="frontend/img/heroBanner1.png"
-            alt="Editar personaje"
-        >
-
-    </section>
-
-    <div class="lineaSeparadora"></div>
-
     <section class="contenedorFormulario">
 
         <h2>
@@ -23,7 +12,7 @@
 
             <div class="grupoFormulario">
 
-                <label>
+                <label for="nombre">
 
                     Nombre
 
@@ -32,6 +21,7 @@
                 <input
                     type="text"
                     id="nombre"
+                    placeholder="Ingrese el nombre del personaje"
                     required
                 >
 
@@ -39,9 +29,9 @@
 
             <div class="grupoFormulario">
 
-                <label>
+                <label for="sub_coleccion_id">
 
-                    Sub-Colección
+                    Subcolección
 
                 </label>
 
@@ -50,10 +40,11 @@
                     required
                 >
 
-                    <option value="1">Pinky Pow 2006</option>
-                    <option value="2">Peores Que Nunca</option>
-                    <option value="3">Rebeldes Con Causa</option>
-                    <option value="5">Pinky Pow 2020</option>
+                    <option value="1">Base Pinky Pow 2006</option>
+                    <option value="2">Base Peores Que Nunca</option>
+                    <option value="3">Base Rebeldes con Causa</option>
+                    <option value="4">Base Super Heroes</option>
+                    <option value="5">Base Pinky Pow 2020</option>
                     <option value="6">Sub-colección Baby</option>
                     <option value="7">Sub-colección X</option>
 
@@ -63,9 +54,9 @@
 
             <div class="grupoFormulario">
 
-                <label>
+                <label for="tipo_llavero_id">
 
-                    Tipo de Llavero
+                    Tipo de llavero
 
                 </label>
 
@@ -85,16 +76,16 @@
 
             <div class="grupoFormulario">
 
-                <label>
+                <label for="img_personaje">
 
-                    Imagen del personaje
+                    Nueva imagen (opcional)
 
                 </label>
 
                 <input
                     type="file"
                     id="img_personaje"
-                    accept="image/*"
+                    accept=".png,.jpg,.jpeg"
                 >
 
             </div>
@@ -110,6 +101,8 @@
                 <img
                     id="previewImagen"
                     class="previewImagen"
+                    src=""
+                    alt="Vista previa del personaje"
                 >
 
             </div>

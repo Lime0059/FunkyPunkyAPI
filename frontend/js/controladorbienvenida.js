@@ -1,29 +1,76 @@
-document.addEventListener("DOMContentLoaded", () => {
-    inicializarNavegacionBienvenida();
-});
+document.addEventListener("DOMContentLoaded", async () => {
 
-function inicializarNavegacionBienvenida() {
-    const enlacesNavegacion = document.querySelectorAll(".bienvenida__enlace");
-    const cuerpoPantalla = document.querySelector(".pantalla-bienvenida");
+    const contenedor = document.getElementById("contenedorBienvenida");
+    const sitio = document.getElementById("sitio");
 
-    enlacesNavegacion.forEach(enlace => {
-        enlace.addEventListener("click", (evento) => {
-            const rutaDestino = evento.target.getAttribute("data-destino");
-            
-            if (rutaDestino) {
-                cuerpoPantalla.style.opacity = "0";
-                setTimeout(() => {
-                    ejecutarRedireccion(rutaDestino);
-                }, 500);
-            }
+    sitio.style.display = "none";
+
+    if (localStorage.getItem("bienvenidaVista") === "true") {
+
+        contenedor.style.display = "none";
+
+        sitio.style.display = "block";
+
+        await iniciarAplicacion();
+
+        return;
+
+    }
+
+    try {
+
+        const respuesta = await fetch("frontend/welcome.html");
+
+        if (!respuesta.ok) {
+
+            throw new Error("No se pudo cargar welcome.");
+
+        }
+
+        contenedor.innerHTML = await respuesta.text();
+
+        const botones = contenedor.querySelectorAll(".bienvenida__enlace");
+
+        botones.forEach(boton => {
+
+            boton.onclick = async () => {
+
+                const destino = boton.dataset.destino;
+
+                if (destino === "entrar") {
+
+                    localStorage.setItem("bienvenidaVista", "true");
+
+                    contenedor.style.display = "none";
+
+                    sitio.style.display = "block";
+
+                    await iniciarAplicacion();
+
+                }
+
+                else if (destino === "login") {
+
+                    localStorage.setItem("bienvenidaVista", "true");
+
+                    window.location.href = "frontend/views/login.html";
+
+                }
+
+            };
+
         });
-    });
-}
 
-/**
- * Cambia la ubicación física de la ventana del navegador
- * @param {string} url - Ruta de destino
- */
-function ejecutarRedireccion(url) {
-    window.location.href = url;
-}
+    }
+
+    catch (error) {
+
+        console.error(error);
+
+        sitio.style.display = "block";
+
+        await iniciarAplicacion();
+
+    }
+
+});

@@ -9,58 +9,59 @@
     font-style: normal;
 }
 
-.pantalla-bienvenida {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
+/* CONTENEDOR DEL MODULO */
+#contenedorBienvenida{
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #000000; 
-    font-family: 'Roboto', sans-serif; /* letra general */
-    color: #ffffff;
-    transition: opacity 0.5s ease-in-out; /*transición suave de js */
+
+    background-color: #000000;
+    transition: opacity .5s ease-in-out;
 }
 
 /* Contenedor Principal */
-.bienvenida {
+.bienvenida{
     text-align: center;
     max-width: 450px;
     padding: 2rem;
 }
 
 /* efecto hover */
-.bienvenida__contenedor-logo {
+.bienvenida__contenedor-logo{
     position: relative;
-    width: 250px; /*se ajusta dependiendo de la img*/
+    width: 250px;
     height: 250px;
     margin: 0 auto 2.5rem auto;
     cursor: pointer;
 }
 
-.bienvenida__logo {
+.bienvenida__logo{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     object-fit: contain;
-    transition: opacity 0.3s ease-in-out;
+    transition: opacity .3s ease-in-out;
 }
 
-.bienvenida__logo--activo {
-    opacity: 0; 
-}
-
-.bienvenida__contenedor-logo:hover .bienvenida__logo--normal {
+.bienvenida__logo--activo{
     opacity: 0;
 }
 
-.bienvenida__contenedor-logo:hover .bienvenida__logo--activo {
+.bienvenida__contenedor-logo:hover .bienvenida__logo--normal{
+    opacity: 0;
+}
+
+.bienvenida__contenedor-logo:hover .bienvenida__logo--activo{
     opacity: 1;
 }
 
-.bienvenida__opciones {
+.bienvenida__opciones{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -68,30 +69,30 @@
 }
 
 /* estilo para entrar y login */
-.bienvenida__enlace {
+.bienvenida__enlace{
     background: none;
     border: none;
     cursor: pointer;
     padding: 0;
-    transition: transform 0.2s ease, filter 0.2s ease;
-    
-    font-family: 'BadaBoom BB', sans-serif;  
-    font-size: 2.5rem;                       
-    color: #ffffff;                       
-    -webkit-text-stroke: 3px #000000;      /* contorno negro */
-    letter-spacing: 3px;                     /* espacio en el contorno de las letras */
+    transition: transform .2s ease, filter .2s ease;
+
+    font-family: 'BadaBoom BB', sans-serif;
+    font-size: 2.5rem;
+    color: #ffffff;
+    -webkit-text-stroke: 3px #000000;
+    letter-spacing: 3px;
 }
 
-.bienvenida__enlace:hover {
-    transform: scale(1.1); /* agrandar ligeramente el texto */
+.bienvenida__enlace:hover{
+    transform: scale(1.1);
     filter: brightness(1.2);
 }
 
-/* separador | */
-.bienvenida__separador {
+/* separador */
+.bienvenida__separador{
     font-family: 'BadaBoom BB', sans-serif;
     font-size: 2.2rem;
     color: #000000;
-    -webkit-text-stroke: 4px #ffffff; 
+    -webkit-text-stroke: 4px #ffffff;
     user-select: none;
 }

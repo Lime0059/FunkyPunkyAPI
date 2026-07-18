@@ -20,33 +20,41 @@
     <link rel="stylesheet" href="frontend/css/tarjeta.css">
     <link rel="stylesheet" href="frontend/css/btnDetalle.css">
     <link rel="stylesheet" href="frontend/css/btnEliminar.css">
-    <link rel="stylesheet" href="frontend/css/admin.css">
-    <!-- <link rel="stylesheet" href="css/agregarPersonaje.css">  -->
+
     <link rel="stylesheet" href="frontend/css/detalleColeccion.css">
     <link rel="stylesheet" href="frontend/css/colecciones.css">
     <link rel="stylesheet" href="frontend/css/editarPersonaje.css">
     <link rel="stylesheet" href="frontend/css/agregarPersonaje.css">
-
+    <link rel="stylesheet" href="frontend/css/estiloBienvenida.css">
+    <link rel="stylesheet" href="frontend/css/admin.css">
 
 </head>
 
 <body>
 
-    <div id="sidebar" style="position: fixed; z-index: 1000;"></div>
+    <!-- Bienvenida -->
+    <div id="contenedorBienvenida"></div>
 
-    <div class="main">
+    <!-- Sitio -->
+    <div id="sitio">
 
-        <div id="header"></div>
+        <div id="sidebar" style="position:fixed; z-index:1000;"></div>
 
-        <main id="contenido">
+        <div class="main">
 
-            <!-- Aquí se cargarán las vistas -->
+            <div id="header"></div>
 
-        </main>
+            <main id="contenido">
 
-        <div id="footer"></div>
+            </main>
+
+            <div id="footer"></div>
+
+        </div>
 
     </div>
+
+    <script src="frontend/js/controladorBienvenida.js"></script>
 
     <script src="frontend/js/editarPersonaje.js"></script>
     <script src="frontend/js/colecciones.js"></script>

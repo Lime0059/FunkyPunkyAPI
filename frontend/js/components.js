@@ -5,14 +5,18 @@ async function cargarComponente(idContenedor, rutaArchivo) {
         const respuesta = await fetch(rutaArchivo);
 
         if (!respuesta.ok) {
+
             throw new Error(`No se pudo cargar ${rutaArchivo}`);
+
         }
 
         const contenido = await respuesta.text();
 
         document.getElementById(idContenedor).innerHTML = contenido;
 
-    } catch (error) {
+    }
+
+    catch (error) {
 
         console.error(error);
 
@@ -20,16 +24,27 @@ async function cargarComponente(idContenedor, rutaArchivo) {
 
 }
 
-document.addEventListener("DOMContentLoaded", async () => {
+async function iniciarAplicacion() {
 
-    await cargarComponente("sidebar", "frontend/components/sidebar.html");
+    await cargarComponente(
+        "sidebar",
+        "frontend/components/sidebar.html"
+    );
 
-    await cargarComponente("header", "frontend/components/header.html");
+    await cargarComponente(
+        "header",
+        "frontend/components/header.html"
+    );
 
-    await cargarComponente("footer", "frontend/components/footer.html");
+    await cargarComponente(
+        "footer",
+        "frontend/components/footer.html"
+    );
 
     inicializarSidebar();
+
     inicializarHeader();
+
     inicializarRouter();
 
-});
+}

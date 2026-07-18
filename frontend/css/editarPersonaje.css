@@ -2,22 +2,31 @@
    EDITAR PERSONAJE
 =========================== */
 
-.agregarPersonaje{
+.layout-dos-columnas{
+    display:flex;
+    flex-direction:row;
     width:100%;
-    max-width:1200px;
+    max-width:1400px;
     margin:0 auto;
-    padding:30px 20px;
+    padding:40px 30px;
+    gap:50px;
+    align-items:flex-start;
 }
 
-.heroPersonajes{
-    width:100%;
-    margin-bottom:30px;
+.heroColecciones{
+    flex:1;
 }
 
-.heroPersonajes img{
+.heroColecciones img{
     width:100%;
-    border-radius:12px;
     display:block;
+    border-radius:12px;
+}
+
+.admin-column{
+    flex:1;
+    display:flex;
+    flex-direction:column;
 }
 
 .lineaSeparadora{
@@ -29,12 +38,14 @@
 
 .contenedorFormulario{
 
-    background-color:#1c1c1c;
+    background:#1c1c1c;
+
     border:3px solid #b10023;
+
     border-radius:12px;
 
     width:100%;
-    max-width:500px;
+    max-width:520px;
 
     margin:0 auto;
 
@@ -47,19 +58,21 @@
 .contenedorFormulario h2{
 
     color:#ffffff;
+
     text-align:center;
 
     font-size:2rem;
 
-    margin-bottom:30px;
-
     text-transform:uppercase;
+
+    margin-bottom:30px;
 
 }
 
 #formEditarPersonaje{
 
     display:flex;
+
     flex-direction:column;
 
 }
@@ -67,6 +80,7 @@
 .grupoFormulario{
 
     display:flex;
+
     flex-direction:column;
 
     margin-bottom:20px;
@@ -79,9 +93,9 @@
 
     font-weight:bold;
 
-    margin-bottom:8px;
-
     text-transform:uppercase;
+
+    margin-bottom:8px;
 
 }
 
@@ -89,28 +103,28 @@
 .grupoFormulario select,
 .grupoFormulario input[type="file"]{
 
-    background:#2b2b2b;
-
-    border:1px solid #444;
-
-    color:#ffffff;
+    width:100%;
 
     padding:12px;
 
     border-radius:6px;
 
+    border:1px solid #444;
+
+    background:#2b2b2b;
+
+    color:#ffffff;
+
     font-size:1rem;
 
     outline:none;
-
-    width:100%;
 
 }
 
 .grupoFormulario input:focus,
 .grupoFormulario select:focus{
 
-    border-color:#88011c;
+    border-color:#b10023;
 
 }
 
@@ -122,11 +136,11 @@
 
     object-fit:contain;
 
-    border-radius:8px;
+    background:#111;
 
     border:1px solid #444;
 
-    background:#111;
+    border-radius:8px;
 
     padding:10px;
 
@@ -134,7 +148,7 @@
 
 .botonesFormulario{
 
-    margin-top:10px;
+    margin-top:15px;
 
 }
 
@@ -160,18 +174,48 @@
 
     text-transform:uppercase;
 
-    transition:.2s;
+    transition:.25s;
 
 }
 
 .btnGuardar:hover{
 
-    background:#a00020;
+    background:#b10023;
 
 }
 
 .btnGuardar:active{
 
     transform:scale(.98);
+
+}
+
+@media(max-width:950px){
+
+    .layout-dos-columnas{
+
+        flex-direction:column;
+
+        padding:20px;
+
+    }
+
+    .heroColecciones{
+
+        width:100%;
+
+    }
+
+    .admin-column{
+
+        width:100%;
+
+    }
+
+    .contenedorFormulario{
+
+        max-width:100%;
+
+    }
 
 }

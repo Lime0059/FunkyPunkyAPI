@@ -1,88 +1,135 @@
-<section class="agregar-personaje">
+<section class="editarPersonajes">
 
-    <h2 class="formulario__titulo">
+    <section class="heroPersonajes">
 
-        Agregar personaje
+        <img
+            src="frontend/img/heroBanner1.png"
+            alt="Agregar personaje"
+        >
+
+    </section>
+
+    <div class="lineaSeparadora"></div>
+
+    <h2>
+
+        AGREGAR PERSONAJE
 
     </h2>
 
-    <form id="formAgregarPersonaje">
+    <div class="tablaPersonajes">
 
-        <label for="nombre">
+        <form id="formAgregarPersonaje">
 
-            Nombre
+            <table>
 
-        </label>
+                <tbody>
 
-        <input
-            type="text"
-            id="nombre"
-            placeholder="Ingrese el nombre del personaje"
-            required
-        >
+                    <tr>
 
-        <label for="sub_coleccion_id">
+                        <th>Nombre</th>
 
-            Subcolección
+                        <td>
 
-        </label>
+                            <input
+                                type="text"
+                                id="nombre"
+                                placeholder="Ingrese el nombre del personaje"
+                                required
+                            >
 
-        <select
-            id="sub_coleccion_id"
-            required
-        >
+                        </td>
 
-            <option value="">Seleccione una subcolección...</option>
+                    </tr>
 
-            <option value="1">Base Pinky Pow 2006</option>
-            <option value="2">Base Peores Que Nunca</option>
-            <option value="3">Base Rebeldes con Causa</option>
-            <option value="4">Base Super Heroes</option>
-            <option value="5">Base Pinky Pow 2020</option>
-            <option value="6">Sub-colección Baby</option>
-            <option value="7">Sub-colección X</option>
+                    <tr>
 
-        </select>
+                        <th>Subcolección</th>
 
-        <label for="tipo_llavero_id">
+                        <td>
 
-            Tipo de llavero
+                            <select
+                                id="sub_coleccion_id"
+                                required
+                            >
 
-        </label>
+                                <option value="">Seleccione...</option>
 
-        <select
-            id="tipo_llavero_id"
-            required
-        >
+                                <option value="1">Base Pinky Pow 2006</option>
+                                <option value="2">Base Peores Que Nunca</option>
+                                <option value="3">Base Rebeldes con Causa</option>
+                                <option value="4">Base Super Heroes</option>
+                                <option value="5">Base Pinky Pow 2020</option>
+                                <option value="6">Sub-colección Baby</option>
+                                <option value="7">Sub-colección X</option>
 
-            <option value="">Seleccione un tipo...</option>
+                            </select>
 
-            <option value="1">Llavero 3D</option>
-            <option value="2">Colgante 3D</option>
-            <option value="3">Colgante Plano</option>
-            <option value="4">Fluffy Colgante</option>
+                        </td>
 
-        </select>
+                    </tr>
 
-        <label for="img_personaje">
+                    <tr>
 
-            Imagen del personaje
+                        <th>Tipo de llavero</th>
 
-        </label>
+                        <td>
 
-        <input
-            type="file"
-            id="img_personaje"
-            accept=".png,.jpg,.jpeg"
-            required
-        >
+                            <select
+                                id="tipo_llavero_id"
+                                required
+                            >
 
-        <button type="submit">
+                                <option value="">Seleccione...</option>
 
-            Guardar personaje
+                                <option value="1">Llavero 3D</option>
+                                <option value="2">Colgante 3D</option>
+                                <option value="3">Colgante Plano</option>
+                                <option value="4">Fluffy Colgante</option>
 
-        </button>
+                            </select>
 
-    </form>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <th>Imagen</th>
+
+                        <td>
+
+                            <input
+                                type="file"
+                                id="img_personaje"
+                                accept=".png,.jpg,.jpeg"
+                                required
+                            >
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td colspan="2" style="text-align:center; padding-top:20px;">
+
+                            <button type="submit">
+
+                                Guardar personaje
+
+                            </button>
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </form>
+
+    </div>
 
 </section>
